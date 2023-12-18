@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="todolist">
+        <h4 class="textTodo">Please Add Todo</h4>
+        <div class="hideConteiner">
+          <div class="hideCheckbox" onclick="todo.hideCompleted()"></div>
+          <span onclick="todo.hideCompleted()">Hide completed</span>
+        </div>
+        <h1>Task</h1>
+        <div class="event">
+          <input type="text" class="todoInput" placeholder="Write here" />
+          <button class="addButton" onclick="todo.addTodo()">Add</button>
+        </div>
+        <div class="list"></div>
+      </div>
+    </div>
+    <div id="main-modal">
+      <div class="modal">
+        <h3>Are you sure you want to delete?</h3>
+        <button class="yes" onclick="todo.yesButton()">Yes</button>
+        <button class="no" onclick="todo.noButton()">No</button>
+      </div>
+    </div>
+  </body>
+</html>

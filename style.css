@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  display: flex;
+}
+
+.todoInput {
+  width: 954px;
+  height: 52px;
+  border: 2px solid #ffcd04;
+  margin-bottom: 62px;
+}
+
+.addButton {
+  width: 100px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #008594;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  text-transform: capitalize;
+  margin-left: 24px;
+}
+
+.todo {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 1000px;
+  height: 55px;
+  border-bottom: #666666 1px solid;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.todoSpan {
+  margin-left: 32px;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  text-transform: capitalize;
+}
+
+.deleteButton {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: none;
+  position: absolute;
+  right: 24px;
+  cursor: pointer;
+}
+
+.checkBox,
+.hideCheckbox {
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+  border-radius: 5px;
+  border: solid 2px #008594;
+  cursor: pointer;
+}
+
+.hideConteiner {
+  display: flex;
+  width: 180px;
+  gap: 12px;
+  margin-bottom: 95px;
+  margin-left: 900px;
+}
+
+.hideConteiner > span {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.doneTodo {
+  color: #acacac;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  margin-left: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#main-modal {
+  width: 100%;
+  height: 742px;
+  background-color: #0000007d;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal {
+  width: 400px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+}
+#main-modal > .modal > h3 {
+  color: var(--turqua-6, #008594);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  text-transform: lowercase;
+  margin: 52px 51px 120px 53px;
+}
+.modal > .yes {
+  color: var(--turqua-8, #174348);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 120px;
+  right: 216px;
+  bottom: 52px;
+  left: 151px;
+  border: none;
+  background-color: white;
+}
+#main-modal > .modal > .no {
+  position: absolute;
+  top: 120px;
+  right: 151px;
+  bottom: 52px;
+  left: 224px;
+  border: none;
+  background-color: white;
+  color: var(--turqua-8, #174348);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+  text-transform: capitalize;
+}
+::placeholder {
+  padding-left: 3px;
+}
+.textTodo {
+  color: rgb(85, 85, 85);
+  font-size: 30px;
+  position: fixed;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: none;
+  margin-top: 125px;
+  margin-left: 330px;
+}
+
+input:focus {
+  outline: none;
+}
